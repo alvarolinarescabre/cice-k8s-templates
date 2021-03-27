@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: curl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: curl
+  template:
+    metadata:
+      labels:
+        app: curl
+      name: curl
+    spec:
+      containers:
+      - name: curl
+        image: appropriate/curl
+        command:
+          - sh
+          - "-c"
+          - |
+            while true; do
+            curl -v -o /dev/null my-service
+            sleep 10
+            done

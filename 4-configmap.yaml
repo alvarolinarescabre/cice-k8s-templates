@@ -1,0 +1,7 @@
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#configmap-v1-core
+---
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name:
+data:

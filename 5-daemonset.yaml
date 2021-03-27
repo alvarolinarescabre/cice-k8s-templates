@@ -1,0 +1,11 @@
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#daemonset-v1-apps
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name:
+spec:
+  selector:
+    matchLabels:
+  template:
+    # pod template

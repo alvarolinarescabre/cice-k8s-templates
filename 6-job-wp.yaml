@@ -1,0 +1,21 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job
+spec:
+  backoffLimit: 2
+  completions: 4
+  parallelism: 2
+  template:
+    metadata:
+      labels:
+        app: my-wordpress
+      name: my-template
+    spec:
+      containers:
+      - name: wordpress
+        image: wordpress:5.2-apache
+        command: ["/bin/sh", "-c"]
+        args: ["echo hello from $HOSTNAME!"]
+      restartPolicy: Never

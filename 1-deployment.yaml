@@ -1,0 +1,15 @@
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#deployment-v1-apps
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:
+spec:
+  replicas:
+  selector:
+    matchLabels:
+  strategy:
+    rollingUpdate:
+    type:
+  template:
+    # pod template

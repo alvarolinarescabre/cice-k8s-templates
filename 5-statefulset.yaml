@@ -1,0 +1,15 @@
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#statefulset-v1-apps
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name:
+spec:
+  replicas:
+  selector:
+    matchLabels:
+  serviceName:
+  template:
+    # pod template
+  volumeClaimTemplates:
+    # persistent volume claim template

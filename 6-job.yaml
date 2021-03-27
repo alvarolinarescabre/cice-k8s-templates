@@ -1,0 +1,14 @@
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#job-v1-batch
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name:
+spec:
+  backoffLimit:
+  completions:
+  parallelism:
+  template:
+      name:
+    spec:
+      # pod template

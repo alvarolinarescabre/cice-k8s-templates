@@ -1,0 +1,19 @@
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#replicationcontroller-v1-core
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name:
+spec:
+  replicas:
+  selector:
+  template:
+    # pod template
+    # https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#podtemplatespec-v1-core
+    metadata:
+      name: my-template
+    spec:
+      containers:
+        - name:
+          image:
+          # ...

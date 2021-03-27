@@ -1,0 +1,28 @@
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#container-v1-core
+# https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.14/#pod-v1-core
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name:
+spec:
+  containers:
+  - name:
+    image:
+    command:
+    args:
+    env:
+    - name:
+    ports:
+    readinessProbe:
+    livenessProbe:
+    resources:
+    imagePullPolicy:
+    volumeMounts:
+    - name:
+      mountPath:
+  restartPolicy:
+  volumes:
+  - name:
+    persistentVolumeClaim:
+      claimName:
